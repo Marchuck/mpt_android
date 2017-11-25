@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.notkink.mpt_android.AppActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top_appactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+
+        <TextView
+            android:id="@+id/toolbar_title_appactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/luckiestguy_regular"
+            android:text="Twoje Paragony"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="30sp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_weight="9"
+
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addNewBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <include layout="@layout/content_app" />
+
+
+</RelativeLayout>
